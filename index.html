@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Humedales Website</title>
+</head>
+
+<body>
+	<img id="humedales-portada" src="public/images/humedales-portada.gif" alt="Imagen Animada" width="500px">
+
+	<script>
+		// Pre-carga de la imagen estática
+		var imagenEstatica = new Image();
+		imagenEstatica.src = "public/images/humedales-portada.png";
+
+		// Espera 2 segundos antes de ejecutar el cambio
+		setTimeout(function () {
+			// Selecciona la imagen por su ID y cambia el src al archivo estático
+			document.getElementById("humedales-portada").src = imagenEstatica.src;
+		}, 2000);
+	</script>
+</body>
+
+</html>
